@@ -9,10 +9,8 @@ $plugin = array(
   'title' => t('Ting Recommender'),
   'description' => t('Show recommendation'),
   'single' => TRUE,
-  //'edit form' => 'ting_inspiration_list_content_type_edit_form',
   'render callback' => 'ting_recommender_content_type_render',
   'category' => t('Ting'),
-  //'required context' => array(new ctools_context_required(t('Inspiration List'), 'node')),
   'render last' => TRUE,
 );
 
@@ -23,7 +21,7 @@ function ting_recommender_content_type_render($subtype, $conf, $panel_args, $con
   // Define the return block.
   $block = new stdClass();
   drupal_add_js('https://cdn.bibspire.dk/ddbcms.js', 'external');
-  
+
   // Set block content.
   $block->content = '<div id="ting-recommender"></div>';
   return $block;

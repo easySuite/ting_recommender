@@ -1,9 +1,30 @@
 name = Ting Recommender
 description = Puts a recommender from Bibspire on object pages
 package = Ding!
-version = "7.x-1.x-dev"
 core = 7.x
 dependencies[] = ting
-
-
-
+dependencies[] = ding_ting_frontend
+dependencies[] = ding_user_frontend
+dependencies[] = features_override
+features[features_api][] = api:2
+features[features_override_items][] = page_manager_handlers.ting_collection_panel_context
+features[features_override_items][] = page_manager_handlers.ting_object_panel_context
+features[features_override_items][] = page_manager_pages.user_loans
+features[features_override_items][] = page_manager_pages.user_reservations
+features[features_overrides][] = page_manager_handlers.ting_collection_panel_context.conf|display|content|new-420defd3-5896-4004-8daa-0f606067331f
+features[features_overrides][] = page_manager_handlers.ting_collection_panel_context.conf|display|content|new-b238f54d-6cbb-4d51-873d-4510199d4854|position
+features[features_overrides][] = page_manager_handlers.ting_collection_panel_context.conf|display|panels|left_sidebar|3
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|content|new-0ff7e4a6-1810-4de9-84d4-fda87404376a|position
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|content|new-2c6af9c6-63ae-4100-9b56-e3b1bee1ce9a|position
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|content|new-6aced172-c48a-4698-b3c6-f1a820b5428b|position
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|content|new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|3
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|4
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|5
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|6
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|storage_id
+features[features_overrides][] = page_manager_handlers.ting_object_panel_context.conf|display|storage_type
+features[features_overrides][] = page_manager_pages.user_loans.default_handlers|page_user_loans_panel_context|conf|display|content|new-25838571-8539-423d-88a5-158c6d88bf36
+features[features_overrides][] = page_manager_pages.user_loans.default_handlers|page_user_loans_panel_context|conf|display|panels|left_sidebar|2
+features[features_overrides][] = page_manager_pages.user_reservations.default_handlers|page_user_reservations_panel_context|conf|display|content|new-d8d0e668-25f7-4d70-84f6-49996897aa17
+features[features_overrides][] = page_manager_pages.user_reservations.default_handlers|page_user_reservations_panel_context|conf|display|panels|left_sidebar|2
