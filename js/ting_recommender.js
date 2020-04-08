@@ -7,6 +7,6 @@
 
 window.addEventListener('load', function () {
   let container = document.querySelector('#ting-recommender');
-  let asd = container.getElementsByTagName('h2');
-  asd[0].textContent = Drupal.t('Inspiration');
+  let heading = container.getElementsByTagName('h2');
+  heading[0].textContent = Drupal.t('Inspiration');
 });
