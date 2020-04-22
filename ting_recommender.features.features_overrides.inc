@@ -30,8 +30,6 @@ function ting_recommender_features_override_default_overrides() {
   $overrides["page_manager_handlers.ting_collection_panel_context.conf|display|content|new-b238f54d-6cbb-4d51-873d-4510199d4854|position"] = 2;
   $overrides["page_manager_handlers.ting_collection_panel_context.conf|display|panels|left_sidebar|3"] = 'new-420defd3-5896-4004-8daa-0f606067331f';
   $overrides["page_manager_handlers.ting_object_panel_context.conf|display|content|new-0ff7e4a6-1810-4de9-84d4-fda87404376a|position"] = 6;
-  $overrides["page_manager_handlers.ting_object_panel_context.conf|display|content|new-2c6af9c6-63ae-4100-9b56-e3b1bee1ce9a|position"] = 5;
-  $overrides["page_manager_handlers.ting_object_panel_context.conf|display|content|new-6aced172-c48a-4698-b3c6-f1a820b5428b|position"] = 4;
   $overrides["page_manager_handlers.ting_object_panel_context.conf|display|content|new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3"] = (object) array(
       'pid' => 'new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3',
       'panel' => 'attachment_1_1',
@@ -48,8 +46,6 @@ function ting_recommender_features_override_default_overrides() {
       'uuid' => 'd30a83e2-5102-4e5d-8f1d-2b63c0aefcb3',
     );
   $overrides["page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|3"] = 'new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3';
-  $overrides["page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|4"] = 'new-6aced172-c48a-4698-b3c6-f1a820b5428b';
-  $overrides["page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|5"] = 'new-2c6af9c6-63ae-4100-9b56-e3b1bee1ce9a';
   $overrides["page_manager_handlers.ting_object_panel_context.conf|display|panels|attachment_1_1|6"] = 'new-0ff7e4a6-1810-4de9-84d4-fda87404376a';
   $overrides["page_manager_handlers.ting_object_panel_context.conf|display|storage_id"]["DELETED"] = TRUE;
   $overrides["page_manager_handlers.ting_object_panel_context.conf|display|storage_type"]["DELETED"] = TRUE;

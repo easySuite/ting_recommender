@@ -29,8 +29,6 @@ function ting_recommender_default_page_manager_handlers_alter(&$data) {
   }
   if (isset($data['ting_object_panel_context'])) {
     $data['ting_object_panel_context']->conf['display']->content['new-0ff7e4a6-1810-4de9-84d4-fda87404376a']->position = 6; /* WAS: 5 */
-    $data['ting_object_panel_context']->conf['display']->content['new-2c6af9c6-63ae-4100-9b56-e3b1bee1ce9a']->position = 5; /* WAS: 4 */
-    $data['ting_object_panel_context']->conf['display']->content['new-6aced172-c48a-4698-b3c6-f1a820b5428b']->position = 4; /* WAS: 3 */
     $data['ting_object_panel_context']->conf['display']->content['new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3'] = (object) array(
           'pid' => 'new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3',
           'panel' => 'attachment_1_1',
@@ -47,8 +45,6 @@ function ting_recommender_default_page_manager_handlers_alter(&$data) {
           'uuid' => 'd30a83e2-5102-4e5d-8f1d-2b63c0aefcb3',
         ); /* WAS: '' */
     $data['ting_object_panel_context']->conf['display']->panels['attachment_1_1']['3'] = 'new-d30a83e2-5102-4e5d-8f1d-2b63c0aefcb3'; /* WAS: 'new-6aced172-c48a-4698-b3c6-f1a820b5428b' */
-    $data['ting_object_panel_context']->conf['display']->panels['attachment_1_1']['4'] = 'new-6aced172-c48a-4698-b3c6-f1a820b5428b'; /* WAS: 'new-2c6af9c6-63ae-4100-9b56-e3b1bee1ce9a' */
-    $data['ting_object_panel_context']->conf['display']->panels['attachment_1_1']['5'] = 'new-2c6af9c6-63ae-4100-9b56-e3b1bee1ce9a'; /* WAS: 'new-0ff7e4a6-1810-4de9-84d4-fda87404376a' */
     $data['ting_object_panel_context']->conf['display']->panels['attachment_1_1']['6'] = 'new-0ff7e4a6-1810-4de9-84d4-fda87404376a'; /* WAS: '' */
     unset($data['ting_object_panel_context']->conf['display']->storage_id);
     unset($data['ting_object_panel_context']->conf['display']->storage_type);
