@@ -23,7 +23,7 @@ function ting_recommender_content_type_render($subtype, $conf, $panel_args, $con
   drupal_add_js('https://cdn.bibspire.dk/ddbcms.js', 'external');
 
   // Set block content.
-  $block->content['#markup'] = '<div id="ting-recommender"></div>';
+  $block->content['#markup'] = '<div id="ting-recommender" style="display: none"></div>';
   $block->content['#attached']['js'][] = drupal_get_path('module', 'ting_recommender') . '/js/ting_recommender.js';
   return $block;
 }
