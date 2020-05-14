@@ -7,6 +7,9 @@
 
 window.addEventListener('load', function () {
   let container = document.querySelector('#ting-recommender');
-  let heading = container.getElementsByTagName('h2');
-  heading[0].textContent = Drupal.t('Inspiration');
+  if (container.childElementCount !== 0) {
+    let heading = container.getElementsByTagName('h2');
+    heading[0].textContent = Drupal.t('Inspiration');
+    container.removeAttribute('style');
+  }
 });
