@@ -20,10 +20,12 @@ $plugin = array(
 function ting_recommender_content_type_render($subtype, $conf, $panel_args, $context) {
   // Define the return block.
   $block = new stdClass();
-  drupal_add_js('https://cdn.bibspire.dk/ddbcms.js', 'external');
+  drupal_add_js('https://cdn.bibspire.dk/ddbcms.js', [
+    'type' => 'external',
+    'defer' => TRUE,
+  ]);
 
   // Set block content.
-  $block->content['#markup'] = '<div id="ting-recommender" style="display: none"></div>';
-  $block->content['#attached']['js'][] = drupal_get_path('module', 'ting_recommender') . '/js/ting_recommender.js';
+  $block->content['#markup'] = '<div id="ting-recommender" style="display: none;"></div>';
   return $block;
 }
