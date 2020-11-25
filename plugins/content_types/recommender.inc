@@ -11,6 +11,7 @@ $plugin = array(
   'single' => TRUE,
   'render callback' => 'ting_recommender_content_type_render',
   'category' => t('Ting'),
+  'required context' => new ctools_context_required(t('Ting object'), 'ting_object'),
   'render last' => TRUE,
 );
 
@@ -23,8 +24,13 @@ function ting_recommender_content_type_render($subtype, $conf, $panel_args, $con
   drupal_add_js('https://cdn.bibspire.dk/ddbcms.js', [
     'type' => 'external',
   ]);
+  $object = isset($context->data) ? ($context->data) : NULL;
+  $data = '';
+  if (isset($object)) {
+    $data = 'data-ting-object-id="' . $object->getId() . '"';
+  };
 
   // Set block content.
-  $block->content['#markup'] = '<div id="ting-recommender" style="display: none;"></div>';
+  $block->content['#markup'] = '<a name="recommender"></a><div id="ting-recommender" ' . $data . ' style="display: none;"></div>';
   return $block;
 }
