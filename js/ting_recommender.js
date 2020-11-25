@@ -13,11 +13,10 @@ window.addEventListener('load', function () {
   var user = location.href.match(/\/user\/me\/status/);
 
   if (tingObject) {
-    var container = document.querySelector('#ting-recommender');
-
+    var container = document.getElementById('ting-recommender');
     if (container.childElementCount !== 0) {
-      var headingGrid = container.getElementsByTagName('h2');
-      headingGrid[0].textContent = Drupal.t('Inspiration');
+      var headingGrid = container.getElementsByTagName('h2').item(0);
+      headingGrid.textContent = Drupal.t('Inspiration');
       container.removeAttribute('style');
     }
   }
