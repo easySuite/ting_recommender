@@ -1,18 +1,18 @@
-  <?php
+<?php
+
 /**
  * @file
- * This plugin generates a search result based on a new materials node. It's
- * mainly used to override the default page for this node type (node/%node).
+ * This plugin renders a wrapper for recommendations list.
  */
 
-$plugin = array(
+$plugin = [
   'title' => t('Ting Recommender'),
   'description' => t('Show recommendation'),
   'single' => TRUE,
   'render callback' => 'ting_recommender_content_type_render',
   'category' => t('Ting'),
   'render last' => TRUE,
-);
+];
 
 /**
  * Render the ting new materials results results amount block.
@@ -20,11 +20,8 @@ $plugin = array(
 function ting_recommender_content_type_render($subtype, $conf, $panel_args, $context) {
   // Define the return block.
   $block = new stdClass();
-  drupal_add_js('https://cdn.bibspire.dk/ddbcms.js', [
-    'type' => 'external',
-  ]);
+  drupal_add_js(drupal_get_path('module', 'ting_recommender') . '/js/widget/recommender.js', 'file');
 
-  // Set block content.
-  $block->content['#markup'] = '<div id="ting-recommender" style="display: none;"></div>';
+  $block->content['#markup'] = '<div id="ting-recommender"></div>';
   return $block;
 }
