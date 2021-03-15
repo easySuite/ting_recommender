@@ -27,4 +27,3 @@ features[features_overrides][] = page_manager_pages.user_loans.default_handlers|
 features[features_overrides][] = page_manager_pages.user_loans.default_handlers|page_user_loans_panel_context|conf|display|panels|left_sidebar|2
 features[features_overrides][] = page_manager_pages.user_reservations.default_handlers|page_user_reservations_panel_context|conf|display|content|new-d8d0e668-25f7-4d70-84f6-49996897aa17
 features[features_overrides][] = page_manager_pages.user_reservations.default_handlers|page_user_reservations_panel_context|conf|display|panels|left_sidebar|2
-scripts[] = js/ting_recommender.js

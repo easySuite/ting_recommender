@@ -25,6 +25,6 @@ function ting_recommender_content_type_render($subtype, $conf, $panel_args, $con
   ]);
 
   // Set block content.
-  $block->content['#markup'] = '<div id="ting-recommender" style="display: none;"></div>';
+  $block->content['#markup'] = '<div id="ting-recommender"></div>';
   return $block;
 }
